@@ -35,6 +35,10 @@ body {
     body {
         padding: 7.5vw;
     }
+
+    h1 {
+        font-size: 38px;
+    }
 }
 
 .container {
@@ -48,23 +52,30 @@ body {
 }
 
 img {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
     border-radius: 25px;
+    /* position: absolute; */
+    object-fit: cover;
 }
 
-.one-left,
-.two-right {
+.big-box {
+    display: flex;
+    width: 100%;
+}
+
+.img-box {
     width: 44%;
-    height: 40vh;
     margin: 0.5%;
 }
 
-.one-right,
-.two-left {
+.inner-div {
+    width: 100%;
+    position: relative;
+}
+
+.txt-box {
     width: 54%;
-    height: 40vh;
+    height: fit-content;
     background-color: rgba(255, 255, 255, 1);
     padding: 5%;
     border-radius: 25px;
