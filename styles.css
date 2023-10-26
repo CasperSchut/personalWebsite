@@ -22,23 +22,13 @@ html {
     height: 100vh;
     width: 100vw;
     padding: 0;
-    z-index: 0;
 }
 
 body {
     height: 100%;
     margin: 0;
     padding: 5vw;
-}
-
-@media screen and (max-width: 700px) {
-    body {
-        padding: 7.5vw;
-    }
-
-    h1 {
-        font-size: 38px;
-    }
+    overflow-x: hidden;
 }
 
 .container {
@@ -48,7 +38,6 @@ body {
     flex-wrap: wrap;
     max-width: 1100px;
     margin: auto;
-    z-index: 1;
 }
 
 img {
@@ -60,9 +49,12 @@ img {
     overflow-y: scroll;
 }
 
-.big-box {
+.big-box1,
+.big-box2,
+.big-box3 {
     display: flex;
     width: 100%;
+    flex-direction: row;
 }
 
 .txt-box,
@@ -85,4 +77,24 @@ img {
     background-color: rgba(255, 255, 255, 1);
     padding: 5%;
     z-index: 2;
+}
+
+@media screen and (max-width: 480px) {
+    .big-box1, 
+    .big-box3 {
+        flex-direction: column;
+    }
+
+    .big-box2 {
+        flex-direction: column-reverse;
+    }
+
+    .img-box {
+        height: 300px;
+    }
+
+    .img-box,
+    .txt-box {
+        width: 100%;
+    }
 }
