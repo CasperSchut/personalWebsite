@@ -38,13 +38,14 @@ body {
     flex-wrap: wrap;
     max-width: 1100px;
     margin: auto;
+    padding-bottom: 10vh;
 }
 
 img {
     width: 100%;
     border-radius: 25px;
     object-fit: cover;
-    flex-basis: 0px;
+    flex-basis: 0;
     flex-grow: 1;
     overflow-y: scroll;
 }
@@ -96,5 +97,19 @@ img {
     .img-box,
     .txt-box {
         width: 100%;
+    }
+
+    .container {
+        padding-bottom: 2.5vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: xxx-large;
+    }
+
+    p{
+        font-size: x-large;
     }
 }
